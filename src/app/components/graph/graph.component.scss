@@ -1,14 +1,17 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
   &-left {
-    margin-bottom: 1.25rem;
     color: white;
     font-weight: 300;
     font-size: 0.9rem;
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    float: left;
-    overflow: hidden;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
     max-width: 50%;
+    flex-wrap: wrap;
 
     &-organization {
       font-weight: 500;
@@ -19,16 +22,18 @@
     color: white;
     font-size: 0.9rem;
     font-weight: 300;
-    display: inline-block;
-    margin-bottom: 1.25rem;
-    float: right;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 50%;
+    flex-wrap: wrap;
 
     &-amount {
-      display: inline-block;
       background: white;
       color: black;
       border-radius: 10000px;
       padding: 0.25rem 0.5rem;
+      margin-left: .5rem;
     }
   }
 }

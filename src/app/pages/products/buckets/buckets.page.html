@@ -56,7 +56,9 @@
     *ngIf="!isLoading && (!buckets) || (buckets.length === 0) && !error"
   >
     <fa-icon slot="start" [icon]="['fas', 'database']" [size]="'2x'"></fa-icon>
-    <p>No bucket available</p>
+    <p>No buckets found</p>
+    <small
+    >There are no buckets on this project, try to switch project.</small>
   </div>
 
   <div class="not-found" *ngIf="!isLoading && error">

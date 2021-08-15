@@ -15,7 +15,7 @@ import { BillingDto } from "../../services/billing/billing.dto";
   styleUrls: ["./graph.component.scss"],
 })
 export class GraphComponent implements OnChanges {
-  @Input() billings: BillingDto;
+  @Input() billings: BillingDto[];
   @Input() organizationName: any;
   @Input() projectName: any;
 
